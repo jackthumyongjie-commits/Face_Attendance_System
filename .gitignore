@@ -1,0 +1,14 @@
+.env
+/public/uploads/faces/*
+!/public/uploads/faces/.gitkeep
+/public/uploads/attendance/*
+!/public/uploads/attendance/.gitkeep
+/public/uploads/leave/*
+!/public/uploads/leave/.gitkeep
+/storage/logs/*
+!/storage/logs/.gitkeep
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.log

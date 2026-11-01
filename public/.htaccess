@@ -1,0 +1,12 @@
+DirectoryIndex index.php
+
+RewriteEngine On
+RewriteBase "/project/Face Attendance System/public/"
+
+# Root of /public/
+RewriteRule ^$ index.php?url=/ [L,QSA]
+
+# Pretty URLs -> front controller
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

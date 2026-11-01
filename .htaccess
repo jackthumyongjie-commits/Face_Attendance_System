@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Already inside /public — do not rewrite again
+RewriteRule ^public($|/) - [L]
+
+# Send everything else into public/
+RewriteRule ^(.*)$ public/$1 [L]
